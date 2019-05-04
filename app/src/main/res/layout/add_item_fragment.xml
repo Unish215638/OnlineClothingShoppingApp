@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAddItem">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="400dp"
+       android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_library_add_black_24dp"
+        android:text="Add Product Details"
+        android:drawableTint="@color/Green"
+        android:drawablePadding="10dp"
+        android:textColor="@color/DarkGreen"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Item Name"
+                android:id="@+id/etitemName"
+                android:drawableLeft="@drawable/ic_shopping_basket_black_24dp"
+              />
+
+            <EditText
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Item Price"
+                android:id="@+id/etItemprice"
+                android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"/>
+            <EditText
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Item Image Name"
+                android:id="@+id/etImagename"
+                android:drawableLeft="@drawable/ic_menu_gallery"/>
+            <EditText
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:hint=" Add Item Description "
+                android:id="@+id/etItemdescription"
+                android:drawableLeft="@drawable/ic_forum_black_24dp"/>
+            <Button
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:textAllCaps="false"
+                android:id="@+id/btnAddItem"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
